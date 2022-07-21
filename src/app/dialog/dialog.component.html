@@ -1,0 +1,20 @@
+<!-- The Modal -->
+<p>my modal</p>
+<div *ngIf="showDialog">
+    <div class="modal fade show " tabindex="-1" role="dialog" style="display:block ;" [ngStyle]="{'z-index':9000}">
+      <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">show modal</h4>
+          </div>
+          <div class="modal-body">
+          this is a custom message
+          </div>
+          <div class="modal-footer">
+            <button id="yesbtn" type="button" class="btn btn-secondary btn-md" >Yes</button>
+            <button id="nobtn" type="button" class="btn btn-secondary btn-md" (click)="oncloseDialog()" >No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

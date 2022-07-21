@@ -6,11 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { HeaderComponent } from 'src/shared/header/header.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    DialogComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
